@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Diri Mahasiswa</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        form {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #6c757d;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Form Data Diri Mahasiswa</h1>
+    </header>
+
+    <form action="submit.html" method="GET">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" name="nim" required>
+
+        <label for="jurusan">Jurusan:</label>
+        <select id="jurusan" name="jurusan" required>
+            <option value="" disabled selected>Pilih Jurusan</option>
+            <option value="Teknik Informatika">Teknik Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Teknik Elektro">Teknik Elektro</option>
+            <option value="Teknik Mesin">Teknik Mesin</option>
+            <option value="Akuntansi">Akuntansi</option>
+        </select>
+
+        <input type="submit" value="Kirim Data">
+    </form>
+
+    <footer class="footer">
+        <p>&copy; Valen Fathullah Gafansyah - DKI Jakarta</p>
+    </footer>
+
+</body>
+</html>
